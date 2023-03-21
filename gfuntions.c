@@ -142,6 +142,8 @@ int checkbuildstatus(char* src1, char* dest1)
 		strcat(outstr, buff);
 		buildlog(outstr);
 	}
+	close(fd);
+	
 	return (0);
 }
 
