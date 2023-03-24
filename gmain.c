@@ -105,6 +105,9 @@ int main(int argc, char* argv[])
 		   	nooption(dest, src);
 			}	
 		}
+		
+		free(destt);
+		destt = 0;
 	}
 	else
 	{
@@ -112,10 +115,6 @@ int main(int argc, char* argv[])
 			usageerror();
 			exit(EXIT_FAILURE);
 	}
-		
-		
-	free(destt);
-	destt = 0;
 
 	exit(EXIT_SUCCESS);
 }
