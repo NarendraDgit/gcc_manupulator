@@ -175,6 +175,7 @@ void printhelp(void)
 	puts("Usage: mygcc[options] file...");
 	puts("Options");
 	printf("-S\tCompile only; do not assemble or link.\n");
+	printf("-c\tCompile and assemble, but not link.
 	printf("-o<file>\tPlace the output into <file>.");
 	printf("-h Display this information\n");
 }
