@@ -114,13 +114,12 @@ int checkbuildstatus(char* src1, char* dest1)
 	struct stat sb, sb1;
 	int fd;
 	time_t timem, timec;
-
-	fd = open(dest1, O_RDONLY);
-	if(fd == -1)
+	
+	if(access(dest1, F_OK) != 0)
 	{
 		return(0);
 	}
-
+	
 	stat(src1, &sb);
 	stat(dest1, &sb1);
 	timem = sb.st_mtime;
