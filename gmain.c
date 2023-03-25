@@ -53,9 +53,6 @@ int main(int argc, char* argv[])
 
 			case 'h':
 				printhelp();
-
-			default:
-				printhelp();
 		}
 	}
 	if(optind < argc)
@@ -100,14 +97,14 @@ int main(int argc, char* argv[])
 		}
 		if(argc == 4 && o_flag == true)
 		{
-			if(access(src, F_OK) == 0)
-			{
-		   	nooption(dest, src);
-			}	
+		   	nooption(dest, src);	
 		}
 		
-		free(destt);
-		destt = 0;
+		if(destt != NULL)
+		{
+			free(destt);
+			destt = 0;
+		}
 	}
 	else
 	{
