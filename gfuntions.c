@@ -173,7 +173,7 @@ void usageerror(void)
 void printhelp(void)
 {
 	puts("Usage: mygcc[options] file...");
-	puts("Options");
+	puts("Options:");
 	printf("-S\tCompile only; do not assemble or link.\n");
 	printf("-c\tCompile and assemble, but not link.\n");
 	printf("-o<file>\tPlace the output into <file>.\n");
