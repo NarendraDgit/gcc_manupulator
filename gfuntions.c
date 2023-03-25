@@ -165,7 +165,7 @@ void buildlog(char* buff)
 
 void usageerror(void)
 {
-	printf("mygcc:\033[1;31m fatal error: \033[0m no input files\n");
+	printf("mygcc:\033[1;31m fatal error:\033[0m no input files\n");
 	printf("compilation terminated.\n");
 
 }
